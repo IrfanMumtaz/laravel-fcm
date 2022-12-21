@@ -1,0 +1,21 @@
+{
+    "name": "irfanmumtaz/firebase-cloud-message",
+    "description": "This package is design to use firebase service, it can send firebase cloud message notifications.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "classmap": [
+        "src"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Irfan Mumtaz",
+            "email": "im.irfanmumtaz21@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "7.5.x-dev"
+    }
+}
