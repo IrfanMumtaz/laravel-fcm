@@ -1,6 +1,6 @@
 {
     "name": "irfanmumtaz/firebase-cloud-message",
-    "description": "This package is design to use firebase service, it can send firebase cloud message notifications.",
+    "description": "Laravel-FCM is an easy to use package working with both Laravel and Lumen for sending push notification with Firebase Cloud Messaging (FCM)",
     "type": "project",
     "license": "MIT",
     "autoload": {
