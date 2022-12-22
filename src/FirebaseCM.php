@@ -10,14 +10,15 @@ class FirebaseCM
 
     protected $notification;
     protected $options;
+    protected $data;
     protected $to;
     protected $registrations;
 
-    public function __construct(NotificationBuilder $notification, OptionBuilder $options = null)
+    public function __construct(NotificationBuilder $notification)
     {
+        $this->options = $notification->options->build()->toArray();
+        $this->data = $notification->custom->getData();
         $this->notification = $notification->build()->toArray();
-        if (!is_null($options)) $this->options = $options->build()->toArray();
-        else $this->options = null;
     }
 
     public function setTo(String $to = null)
@@ -66,6 +67,7 @@ class FirebaseCM
             'to' => $this->to,
             'registration_ids' => $registrations,
             'notification' => $this->notification,
+            'data' => $this->data,
         ];
 
         return array_merge($body, $this->options);

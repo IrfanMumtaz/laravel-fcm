@@ -18,11 +18,14 @@ class NotificationBuilder
     protected $icon;
     protected $tag;
     protected $color;
+    public $custom;
+    public $options;
 
     public function __construct($title)
     {
         $this->title = $title;
-
+        $this->custom = new DataBuilder();
+        $this->options = new OptionBuilder();
         return $this;
     }
 
