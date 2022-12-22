@@ -26,6 +26,6 @@ class DataBuilder
 
     public function getData()
     {
-        return $this->data;
+        return $this->data ?: null;
     }
 }
