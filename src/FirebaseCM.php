@@ -66,7 +66,7 @@ class FirebaseCM
         $body = [
             'to' => $this->to,
             'registration_ids' => $registrations,
-            'notification' => $this->notification,
+//            'notification' => $this->notification,
             'data' => $this->data,
         ];
 
